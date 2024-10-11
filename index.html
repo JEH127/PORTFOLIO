@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI & Cybersecurity Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("CSS/style.css");
+    </style>
+  </head>
+  <body class="gradient-bg text-gray-100 min-h-screen">
+    <div class="ai-bg"></div>
+
+    <!-- Add floating cybersecurity icons -->
+    <i class="fas fa-lock cyber-icon text-4xl" style="top: 10%; left: 5%"></i>
+    <i
+      class="fas fa-shield-alt cyber-icon text-5xl"
+      style="top: 30%; right: 10%"
+    ></i>
+    <i
+      class="fas fa-code cyber-icon text-3xl"
+      style="bottom: 15%; left: 15%"
+    ></i>
+    <i
+      class="fas fa-microchip cyber-icon text-4xl"
+      style="top: 60%; right: 5%"
+    ></i>
+
+    <nav
+      class="bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg py-4 sticky top-0 z-10"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <!-- Burger menu button (visible only on small screens) -->
+          <button
+            id="burger-menu"
+            class="text-cyan-300 focus:outline-none sm:hidden"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Navigation links -->
+          <ul
+            id="nav-links"
+            class="hidden sm:flex sm:space-x-6 sm:items-center"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="projects.html"
+                class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="skills.html"
+                class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu (hidden by default) -->
+        <ul
+          id="mobile-menu"
+          class="sm:hidden mt-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="skills.html"
+              class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block text-cyan-300 hover:text-cyan-100 transition duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="py-16 sm:py-24 lg:py-32 text-center relative">
+      <div
+        class="container mx-auto px-4 z-10 relative flex flex-col items-center"
+      >
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4 text-glow"
+        >
+          Jamal EL HANTITI
+        </h1>
+        <p class="text-xl sm:text-2xl text-cyan-300">
+          AI & Cybersecurity Expert
+        </p>
+      </div>
+      <div class="absolute inset-0 flex justify-center items-center opacity-20">
+        <img
+          src="images/computer_chip.png"
+          alt="AI Background"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 relative">
+      <section id="about" class="mb-16 sm:mb-24">
+        <h2
+          class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center text-glow"
+        >
+          About Me
+        </h2>
+        <div
+          class="bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center"
+        >
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0 sm:pr-8">
+            <img
+              src="images/robot.png"
+              alt="AI Representation"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+          <div class="w-full sm:w-2/3">
+            <p class="text-base sm:text-lg text-gray-300">
+              En tant que passionné d'IA et expert en cybersécurité, je me
+              passionne pour l'utilisation de l'intelligence artificielle afin
+              d'améliorer la sécurité numérique. Mon travail se concentre sur le
+              développement d'algorithmes de pointe et de solutions innovantes à
+              des problèmes complexes dans les domaines de l'IA et de la
+              cybersécurité.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- New section for AI and Cybersecurity focus -->
+    </main>
+
+    <footer
+      class="bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg py-8"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-300">
+          &copy; <span id="current-year"></span> All Rights Reserved
+        </p>
+        <!-- <div class="mt-4 flex justify-center space-x-6">
+          <a
+            href="#"
+            class="text-2xl text-cyan-400 hover:text-cyan-300 transition duration-300"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="#"
+            class="text-2xl text-cyan-400 hover:text-cyan-300 transition duration-300"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="#"
+            class="text-2xl text-cyan-400 hover:text-cyan-300 transition duration-300"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div> -->
+      </div>
+    </footer>
+
+    <!-- Script to update the year automatically -->
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+
+      // Burger menu functionality
+      const burgerMenu = document.getElementById("burger-menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      burgerMenu.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("max-h-0")) {
+          mobileMenu.classList.remove("max-h-0");
+          mobileMenu.classList.add("max-h-60"); // Adjust this value based on your content
+        } else {
+          mobileMenu.classList.remove("max-h-60");
+          mobileMenu.classList.add("max-h-0");
+        }
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (event) => {
+        if (
+          !mobileMenu.contains(event.target) &&
+          !burgerMenu.contains(event.target)
+        ) {
+          mobileMenu.classList.remove("max-h-60");
+          mobileMenu.classList.add("max-h-0");
+        }
+      });
+
+      // Handle screen resize
+      function handleResize() {
+        if (window.innerWidth >= 640) {
+          // 640px is the 'sm' breakpoint in Tailwind
+          mobileMenu.classList.remove("max-h-60");
+          mobileMenu.classList.add("max-h-0");
+        }
+      }
+
+      window.addEventListener("resize", handleResize);
+      // Initial call to set correct state
+      handleResize();
+    </script>
+  </body>
+</html>
